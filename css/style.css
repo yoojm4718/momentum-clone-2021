@@ -1,0 +1,162 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+header {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header #weather span {
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+}
+
+.center {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.center #clock {
+  font-size: 150px;
+  font-weight: 700;
+  color: white;
+}
+
+.center #login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center input {
+  width: 400px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid white;
+  color: white;
+  font-size: 20px;
+}
+
+.center #login-form button {
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: white;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+.center #login-form button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.center #greeting {
+  font-size: 40px;
+  color: white;
+  font-weight: 600;
+}
+
+.center #todo-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.center #todo-list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.center #todo-list li span {
+  color: white;
+  font-size: 20px;
+}
+
+.center #todo-list li button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: white;
+  width: 30px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+}
+
+.center #todo-list button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+footer {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer #quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#quote span {
+  color: white;
+  font-style: 30px;
+  font-weight: 500;
+}
+
+.hidden {
+  display: none !important;
+}
